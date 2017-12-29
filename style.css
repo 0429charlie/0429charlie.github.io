@@ -1,0 +1,55 @@
+* {margin: auto; padding: auto;}
+
+html {background-image: url(Simple.jpg); background-size: cover;}
+
+/*background size with repeated y??*/
+body {width: 76%; text-align: center; background-image: url(body2.jpg); background-size: 100%}
+
+#wrap {text-align: left;}
+
+#header {text-align: center; background-image: url(head.jpg); background-size: cover;}
+
+#navigation {background-image: url(nav.png); background-size: cover;}
+
+ul.navigation {list-style-type: none; padding: 0; margin: 0;}
+
+li.navigation {padding-right: 40px; display: inline-block;}
+
+li.navigation a {text-decoration: none; color: grey; font-size: 18px;}
+
+li.navigation a:hover {color: white;}
+
+li.navigation:hover .d-content {display: block;}
+
+.d-content {display:none; position: absolute; color: white; background-image: url(body1.jpg); background-size: cover;}
+
+.d-content ul {list-style-type: none; padding: 0; margin: 0;}
+
+.d-content li {padding-bottom: 10px;}
+
+#current {color: white;}
+
+#content {color: silver;}
+
+#content h2 {font-size: 25px; padding-left: 10px;}
+
+#content p {font-size: 18px; width: 95%; margin: 20px;}
+
+#content a {text-decoration: none; float: right; color: silver; font-size: 18px; padding-right: 20px;}
+
+#content a:hover {color: orange;}
+
+#content ul {list-style: none;}
+
+#fright {float: right;}
+
+#fleft {float: left;}
+
+.clear {clear:both;}
+
+#footer {background-color: grey;}
+
+#contact {padding-left: 30px;}
+
+
+
