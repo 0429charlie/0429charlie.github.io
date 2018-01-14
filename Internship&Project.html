@@ -142,7 +142,7 @@
 					retrieve data. The web interface was built with cshtml, css boostrap, javascript for the frontend (in MVC5 framework) and C# (in Entity Framework) 
 					for the backend. I followed MVC5 framework in adding buttons and input fields onto the web interface and link them to the code that I implemented 
 					in C# as part of the Entity Framework. Other than retrieving data, DataBridge should also log the data request that occur from various users from 
-					various places. My another contribution to DataBridge is to create this logging functionality and a user interface to view the log on the DataBridge 
+					various places. My another contribution to DataBridge is to create the logging functionality and a user interface to view the log on the DataBridge 
 					website. This required me to create algorithm that log all the data to database using Entity Framework whenever 'GetData' is called and a corresponding 
 					dynamic user interface that shows the content of the database on the website. In addition, I implemented a searching algorithm that allows user to search 
 					the log on the interface using wild cards such as * which match one or more character in the record.
@@ -152,7 +152,17 @@
 					<li>
 					<h4>R Interop</h4>
 					<p>
-					coming soon
+					Building R interop was another big challenge that I faced in this work term. The idea is to enable programmers using other languages to use the DataBridge's 
+					functionalities in their languages. In other words, we want to build an interop (bridging component) between the two languages. Since DataBridge is a data 
+					access infrastructure, it is ideal to have R and Python user be able to use DataBridge for data analysis. One of my co-worker was running a Python Interop 
+					project and I was assigned to complete the R Interop project on my own. I started project by doing the research. My co-worker recommended me to look into the 
+					way to import common language runtime (CLR) into R to start since DataBridge is in .Net framework. I discovered an R package called rClr that enable users to 
+					Call .Net code (functions) using R syntax. It also import the common language runtime at the same time! However, I soon realized I can not just use rClr but I 
+					have to created a wrapper of rClr that is for accessing DataBridge specifically for better user experience. The wrapper make the user to access the data by only 
+					providing some of the inputs that is obviously needed. All the other setup and declaration was handled by the wrapper including the import of common language 
+					run time, which is done when the user reference the R package that I created (the wrapper). In addition, I also build a C# console app that will prepare the file 
+					system and automatically installed into the local R environment when launched.
+					
 					</p>
 					</li>
 				</ul>
@@ -162,17 +172,39 @@
 				<ul>
 					<br></br>
 					<li>
-					<h4>Outbound Sales Assistance</h4>
-					<p>
-					coming soon
-					</p>
+						<h4>Outbound Sales Assistance</h4>
+						<p>
+						coming soon
+						</p>
 					</li>
 				</ul>
 				
 				<h2 id="nschoolproject">Project from School</h2>
-				<p>
-				coming soon
-				</p>
+				<ul>
+					<br></br>
+					<li>
+						<h4>CS349 User Interface</h4>
+						<p>Assignment 1 - Side-scrolling Game</p>
+						<p>
+						This assignment was one of the most interesting assignment I had done in University of Waterloo. It was about building up a side-scrolling 
+						game using Java and MVC framework. The code was all about Java and Java SWING, which provide JFrame, JPanel, and many other components that 
+						allows people to create user interface with pure Java code only. The source code was then build with Ant that enable player to run the application 
+						from command line using ant command. The project in on uWaterloo git hub and is not public. However, I have the source code and am able to show 
+						and explain them in person.
+						</p>
+						<p>Assignment 2 - Star Animation</p>
+						<p>
+						This assignment served the purpose of creating non-legging animation that respond to user input. It was also built by Java and Java SWING completely. 
+						It allowed students to understand how event queue work and how to print the image timely to create non-legging animation.
+						</p>
+						<a href="CS349_S17/A3/index.html" style="float:none; padding:0;"><p>Assignment 3 - UWaterloo API</p></a>
+						<p>
+						The assignment 3 of CS349 course was very different with the previous two. It concentrated on exploring web components such as HTML, CSS, and AJAX API.
+						The end product was a user friendly dynamic web page that retrieve data from University of Waterloo Open Data API. Please click on "Assignment 3 - UWaterloo 
+						API" to see the website. 
+						</p>
+					</li>
+				</ul>
 			</div>
 			<div id="footer">
 				<div id="fleft">
