@@ -1,0 +1,1 @@
+Simply Chose the endpoint from the first page (index.html). Each endpoint is linked to an user interface for it. Was planning to so the team challenge but could not find a partner. Notice that I, myself, uses two endpoints and they are accessable form the index.html. More endpoint can be added at the same way.
