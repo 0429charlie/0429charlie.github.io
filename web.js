@@ -1,3 +1,3 @@
 function Loading() {
-    alert("Page is still under construction. It is partially done. Please ask me any additional questions about the content that is not done yet (noted as 'coming soon' on the page) during the interview");
+    alert("If interested in any project listed here, please hover over the project and click to see. Otherwise, please contact me for more detail");
 }
