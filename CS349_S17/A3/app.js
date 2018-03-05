@@ -4,6 +4,12 @@
  *  Note: this code uses ECMAScript 6.
  *  Updated 2017-07-12.
  */
+ 
+ /*
+ *  The code have been updated by Ching Chuan (Charlie) Wu for the cs349 - Spring 2017 - A3. This is a copy of the solution to the A3. Please notice 
+ *	that it includes the starter code written by school and thus please do not distributed the code. 
+ *  Updated 2018-03-04.
+ */
 	
 "use strict";
 

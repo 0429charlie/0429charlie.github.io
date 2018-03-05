@@ -35,6 +35,8 @@ li.navigation:hover .d-content {display: block;}
 
 #content p {font-size: 18px; width: 95%; margin: 20px;}
 
+#content img {margin: 20px;}
+
 #content a {text-decoration: none; float: right; color: silver; font-size: 18px; padding-right: 20px;}
 
 #content a:hover {color: orange;}
