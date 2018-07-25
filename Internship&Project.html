@@ -46,9 +46,9 @@
 						<a id="current" href="Internship&Project.html#internship&project">Internship(Coop) and Project</a>
 						<div class="d-content">
 							<ul>
+								<li><a href="Internship&Project.html#nrbc">RBC Financial Group - Software Developer</a></li>
 								<li><a href="Internship&Project.html#ninfocrop">Shanghai Infocrops Science & Technology Co Ltd - Application Developer</a></li>
 								<li><a href="Internship&Project.html#nultimate">Ultimate Software Group, Inc. - Software Test Engineering</a></li>
-								<li><a href="Internship&Project.html#nrbc">RBC Financial Group - Software Developer</a></li>
 								<li><a href="Internship&Project.html#neasylink">Easylink Communications Ltd</a></li>
 								<li><a href="Internship&Project.html#nschoolproject">Project from School</a></li>
 							</ul>
@@ -81,6 +81,42 @@
 				allows me to participate in some real-life ongoing projects and make some contributions to the companies. The followings are the description 
 				of the internships and the project that I participated or leaded (*please click the company names to go to their website)
 				</p>
+				
+				<br></br>
+				<a href="https://www.rbcroyalbank.com/personal.html" style="float:none; padding:0;"><h2 id="nrbc">RBC Financial Group - Software Developer</h2></a>
+				<ul>
+					<br></br>
+					<li>
+					<h4>DataBridge and Traffic Log</h4>
+					<p>
+					DataBridge is a data access infrastructure used in RBC GAM. It provides multiple ways of retrieving data from RBC GAM database. For example, data 
+					can be retrieved from Microsoft Excel by installing the adds-in to Excel. One of my job was to enhance the web user interface that is used to 
+					retrieve data. The web interface was built with cshtml, css boostrap, javascript for the frontend (in MVC5 framework) and C# (in Entity Framework) 
+					for the backend. I followed MVC5 framework in adding buttons and input fields onto the web interface and link them to the code that I implemented 
+					in C# as part of the Entity Framework. Other than retrieving data, DataBridge should also log the data request that occur from various users from 
+					various places. My another contribution to DataBridge is to create the logging functionality and a user interface to view the log on the DataBridge 
+					website. This required me to create algorithm that log all the data to database using Entity Framework whenever 'GetData' is called and a corresponding 
+					dynamic user interface that shows the content of the database on the website. In addition, I implemented a searching algorithm that allows user to search 
+					the log on the interface using wild cards such as * which match one or more character in the record.
+					</p>
+					</li>
+					<br></br>
+					<li>
+					<h4>R Interop</h4>
+					<p>
+					Building R interop was another big challenge that I faced in this work term. The idea is to enable programmers using other languages to use the DataBridge's 
+					functionalities in their languages. In other words, we want to build an interop (bridging component) between the two languages. Since DataBridge is a data 
+					access infrastructure, it is ideal to have R and Python user be able to use DataBridge for data analysis. One of my co-worker was running a Python Interop 
+					project and I was assigned to complete the R Interop project on my own. I started project by doing the research. My co-worker recommended me to look into the 
+					way to import common language runtime (CLR) into R to start since DataBridge is in .Net framework. I discovered an R package called rClr that enable users to 
+					Call .Net code (functions) using R syntax. It also import the common language runtime at the same time! However, I soon realized I can not just use rClr but I 
+					have to created a wrapper of rClr that is for accessing DataBridge specifically for better user experience. The wrapper make the user to access the data by only 
+					providing some of the inputs that is obviously needed. All the other setup and declaration was handled by the wrapper including the import of common language 
+					run time, which is done when the user reference the R package that I created (the wrapper). In addition, I also build a C# console app that will prepare the file 
+					system and automatically installed into the local R environment when launched.					
+					</p>
+					</li>
+				</ul>
 				
 				<br></br>
 				<a href="http://www.infocrops.com/" style="float:none; padding:0;"><h2 id="ninfocrop">Shanghai Infocrops Science & Technology Co Ltd - Application Developer</h2></a>
@@ -120,43 +156,6 @@
 					back a JSON to see of the functionalities if the web products is working or not. As a result, we had to consist the JSON using C# and sent it 
 					through the web API then verified the returned JSON is the expected one. These all have to be automated as unit tests. The project was a success and 
 					nearly 200 tests were created for the first try and they ran very fast.
-					</p>
-					</li>
-				</ul>
-				
-				<br></br>
-				<a href="https://www.rbcroyalbank.com/personal.html" style="float:none; padding:0;"><h2 id="nrbc">RBC Financial Group - Software Developer</h2></a>
-				<ul>
-					<br></br>
-					<li>
-					<h4>DataBridge and Traffic Log</h4>
-					<p>
-					DataBridge is a data access infrastructure used in RBC GAM. It provides multiple ways of retrieving data from RBC GAM database. For example, data 
-					can be retrieved from Microsoft Excel by installing the adds-in to Excel. One of my job was to enhance the web user interface that is used to 
-					retrieve data. The web interface was built with cshtml, css boostrap, javascript for the frontend (in MVC5 framework) and C# (in Entity Framework) 
-					for the backend. I followed MVC5 framework in adding buttons and input fields onto the web interface and link them to the code that I implemented 
-					in C# as part of the Entity Framework. Other than retrieving data, DataBridge should also log the data request that occur from various users from 
-					various places. My another contribution to DataBridge is to create the logging functionality and a user interface to view the log on the DataBridge 
-					website. This required me to create algorithm that log all the data to database using Entity Framework whenever 'GetData' is called and a corresponding 
-					dynamic user interface that shows the content of the database on the website. In addition, I implemented a searching algorithm that allows user to search 
-					the log on the interface using wild cards such as * which match one or more character in the record.
-					</p>
-					</li>
-					<br></br>
-					<li>
-					<h4>R Interop</h4>
-					<p>
-					Building R interop was another big challenge that I faced in this work term. The idea is to enable programmers using other languages to use the DataBridge's 
-					functionalities in their languages. In other words, we want to build an interop (bridging component) between the two languages. Since DataBridge is a data 
-					access infrastructure, it is ideal to have R and Python user be able to use DataBridge for data analysis. One of my co-worker was running a Python Interop 
-					project and I was assigned to complete the R Interop project on my own. I started project by doing the research. My co-worker recommended me to look into the 
-					way to import common language runtime (CLR) into R to start since DataBridge is in .Net framework. I discovered an R package called rClr that enable users to 
-					Call .Net code (functions) using R syntax. It also import the common language runtime at the same time! However, I soon realized I can not just use rClr but I 
-					have to created a wrapper of rClr that is for accessing DataBridge specifically for better user experience. The wrapper make the user to access the data by only 
-					providing some of the inputs that is obviously needed. All the other setup and declaration was handled by the wrapper including the import of common language 
-					run time, which is done when the user reference the R package that I created (the wrapper). In addition, I also build a C# console app that will prepare the file 
-					system and automatically installed into the local R environment when launched.
-					
 					</p>
 					</li>
 				</ul>
