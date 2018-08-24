@@ -11,7 +11,7 @@
 		<div id="wrap">
 			<div id="header">
 				<h1>Ching Chuan (Charlie) Wu</h1>
-				<p>Candidate for Bachelor of Computer Science/Business Option</p>
+				<p>Candidate for Bachelor of Computer Science/Business Option with Psychology Minor</p>
 				<p>University of Waterloo id: 20550993<p>
 			</div>
 			<div id="navigation">
@@ -49,6 +49,7 @@
 								<li><a href="Internship&Project.html#nrbc">RBC Financial Group - Software Developer</a></li>
 								<li><a href="Internship&Project.html#ninfocrop">Shanghai Infocrops Science & Technology Co Ltd - Application Developer</a></li>
 								<li><a href="Internship&Project.html#nultimate">Ultimate Software Group, Inc. - Software Test Engineering</a></li>
+								<li><a href="Internship&Project.html#nisara">ISARA Corporation - Security Developer</a></li>
 								<li><a href="Internship&Project.html#neasylink">Easylink Communications Ltd</a></li>
 								<li><a href="Internship&Project.html#nschoolproject">Project from School</a></li>
 							</ul>
@@ -161,6 +162,32 @@
 				</ul>
 				
 				<br></br>
+				<a href="https://www.isara.com/" style="float:none; padding:0;"><h2 id="nisara">ISARA Corporation - Security Developer</h2></a>
+				<ul>
+					<br></br>
+					<li>
+					<h4>Malbork and Devaron Windows Build</h4>
+					<p>
+					Malbork is an security package based on OpenSSL integrated with the in-house security toolkit created by ISARA. The toolkit is integrated when building 
+					together with OpenSSL, making up the quantum safe security algorithm. The build in done through cmake in both linux and MacOS. However, many customers 
+					want the Windows version of the package. In order to do the windows build, I ended up using cmake in cygwin. The CMakeLists file had to change in order 
+					to work in all Linux, MacOS, and cygwin for Windows. Devaron, on the other hand, is an in house quantum safe security package that support safe communication 
+					between servers and clients. It integrated firefox build, nss build, and the in-house toolkit build. Due to mozilla has their own build system for windows, 
+					I have to understand their build system for firefox and nss, and used it with the toolkit integrated. Finally, wrap everyhting with cmake. 
+					</p>
+					</li>
+					<br></br>
+					<li>
+					<h4>Firefox Code Profiling</h4>
+					<p>
+					While having quantum safe algorithm is the main objective, the algorithm also has to be fast enough. In order to factor out the unnessassary code, I was told 
+					to find a way to code profile firefox from the Devaron build. To be specific, I had to figure out what function at what line from what file get called how many 
+					times. The researched suggested using the Microsoft Visual Studio built-in code profile, which include both sampling and instrumentation.
+					</p>
+					</li>
+				</ul>
+				
+				<br></br>
 				<a href="http://easylinkcom.com/" style="float:none; padding:0;"><h2 id="neasylink">Easylink Communications Ltd</h2></a>
 				<ul>
 					<br></br>
@@ -179,6 +206,47 @@
 				<br></br>
 				<h2 id="nschoolproject">Project from School</h2>
 				<ul>
+					<br></br>
+					<li>
+						<h4>CS454 Distributed System</h4>
+						<a href="https://github.com/0429charlie/CS454---A2" style="float:none; padding:0;"><p>Assignment 2 - Client & Server with TPC/Socket and RPC library (Milestone)</p></a>
+						<p>
+						This is an indiividual assignment that required coding the client(s) and server and make them talk to each other. The code is in C++ using socket and RPC library.
+						The client(s) will connect to server and then get sentences from the user. It then queue up the sentences and pass it to the server for the conversion. At the end, 
+						it expects the converted sentence with every word starting with capital letter from the server then print the sentences out. The sentences should be printed in the 
+						same order as the user passed in. The server, on the other hand, provides server address and port that can be used by clients to connect to itself. It then listen to 
+						all the request coming from different clients (at most 5) and returned the converted sentence back. Please click on "Assignment 2 - Client & Server with TPC/Socket 
+						and RPC library (Milestone)" to see the source code.
+						</p>
+						<a href="https://github.com/0429charlie/CS454---A3" style="float:none; padding:0;"><p>Assignment 3 - Client & Server & binder with TPC/Socket and RPC library</p></a>
+						<p>
+						This is an group assignment that required coding a binder that registered all the available functions from all different servers and allows clients to get the information 
+						needed in order to connect to a particular server when requested. Therefore, the binder need functions that register the servers and the functions it provided. It also 
+						needs function that accept request from clients and enable clients to call a specific functions from specific server. The binder, in addition, has terminate function that 
+						terminate all the servers and itself when requested by a client. For more, please see A3W18 pdf file in the source code directory. Please click on "Assignment 3 - Client & 
+						Server & binder with TPC/Socket and RPC library" to see the source code.
+						</p>
+					</li>
+					<br></br>
+					<li>
+						<h4>CS450 Computer Architecture</h4>
+						<a href="https://github.com/0429charlie/CS450---A1" style="float:none; padding:0;"><p>Assignment 1 - Verilog</p></a>
+						<p>
+						The first assignment of CS450 introduced system verilog, programing laguage that used to simulate the hardware behaviour. The purpose is to create hardware design that can 
+						process counter module and cordic calculation and simulate them with system verilog. For more infromation, please see p1.pdf in the source directory. Please click on 
+						"Assignment 1 - Verilog" for the source.
+						</p>
+						<a href="https://github.com/0429charlie/CS450---A2" style="float:none; padding:0;"><p>Assignment 2 - Mips Module (SimpleAdd)</p></a>
+						<p>
+						Second assignment of CS450 is simply simulating the famous mips module. For simplicity, the objecctive was to create hardware design that can prosecute a simple add instruction.
+						Again, please see p2.pdf in source directory and please click on "Assignment 2 - Mips Module (SimpleAdd)" for the source.
+						</p>
+						<a href="https://github.com/0429charlie/CS450---A4" style="float:none; padding:0;"><p>Assignment 4 - Mips Module</p></a>
+						<p>
+						Last coding assignment was the enhence version of the second last one. The objecctive was to create hardware design of mips module that can execute almost all the mips instruction.
+						Again, please see p3.pdf in source directory and please click on "Assignment 4 - Mips Module" for the source.
+						</p>
+					</li>
 					<br></br>
 					<li>
 						<h4>CS349 User Interface</h4>
@@ -203,14 +271,16 @@
 						API" to see the website. 
 						</p>
 					</li>
+					<br></br>
 					<li>
 						<h4>CS350 Operating System</h4>
+						<a href="https://github.com/0429charlie/CS350_OS161" style="float:none; padding:0;"><p>All Assignments - OS161</p></a>
 						<p>
 						All of the assignment from CS350 was about building part of the os161. We were given an incomplete os161 at the beginning at the term and ended up in 
 						a complete os161 at the end. The assignment include implementing locks and condition variables for multi-threading. In addition, using the implemented 
 						locks and condition variables to implement system call such as getpid and fork. In order to implement these functionalities, we faced the challenges such 
 						as mapping virtual memory to physical memory and running code in kernel mode securely. The completed os161 is on uwaterloo github and University of Waterloo 
-						student environment. I am not able to distribute the code but am able to show them in person.
+						student environment. Please click on "All Assignments - OS161" to see the source. 
 						</p>
 					</li>
 				</ul>
