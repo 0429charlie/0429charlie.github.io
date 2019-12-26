@@ -228,12 +228,55 @@
 				<ul>
 					<br></br>
 					<li>
+						<h4>CS484 Introduction to Computational Vision</h4>
+						<a href="https://github.com/0429charlie/CS484---Final_Project" style="float:none; padding:0;"><p>Final Project - Multi-source domain adaptation for classification</p></a>
+						<p>
+						Dataset shift is a well known problem where the accuracy of the CNN model for classification task will drop significantly when it encounters image from the domain its never seen before. 
+						For example, a model trained on image that is taken by a camera will not do well classifying image that is drawn by children. The final project for CS484 was to create Convolutional 
+						Neural Network that address Dataset shift problem (please see http://ai.bu.edu/visda-2019 for the detail of the challenge). It is a team project with a team of three people. We came up 
+						with the idea of creating CNN specialize in each domain using pretrained ResNet34 then combine the result using the weights. The weights are decided by another CNN that is trained for 
+						classifying the given image into a specific domain from all possible domains. We then compare our network with the re-trained ResNet34 on all domain and found an 9% increase in accuracy. 
+						While the accuracy is not impressive, we also shows that it can be increase by data augmentation and providing a larger dataset for training. Please click on "Final Project - Multi-source 
+						domain adaptation for classification" to see the self-contained JupiterNotebook. 
+						</p>
+						<a href="https://github.com/0429charlie/CS484---A4" style="float:none; padding:0;"><p>Assignment 4 - Sementic Segmentation with CNN</p></a>
+						<p>
+						The fourth assignment of CS484 class was exactly what I want to learn and do in my future career. The Semantic Segmentation using CNN is essential to what I want to build - an image recognition 
+						application that can serves as basic building block of autonomus driving, perception system for robot, and many more today's cutting edge technology. The CNN built for this assignment will classify the 
+						input image into 20 classes represented by number 1 to 20 and 0 as background pixel-wise result in segmentation of the image into multiple recognizeable objects in the image and background. While the 
+						mean intersection over union (mIoU) of 20% wasn't impressive, it clearly shows a clear segmentation of the object inside the image. This performace in achieved using pre-trained ResNet34 and upsameple 
+						the result to continue proceed to segmentation by adding few extra layer at the end. A more detailed analysis is provided in the notebook. Please click on "Assignment 4 - Sementic Segmentation with CNN" 
+						to see the self-contained JupiterNotebook.
+						</p>
+						<a href="https://github.com/0429charlie/CS484---A3" style="float:none; padding:0;"><p>Assignment 3 - Stereo, K-mean, and Grapg Cut</p></a>
+						<p>
+						This assignment came in three parts. First part is an attempt to distinguish the background and foreground of the image using stero method. The idea is that when moving the camera horizontally, the displayment 
+						or the difference in horizontal axis from the two images are larger for the foreground. The second part is an attempt to implement K-mean that will be used for the third part. While I prefer to use Convolutional 
+						Neural Network for image segmentation, the third part allows me to explore the laternative. The purpose of this assignment was to paint the image object and the image background into two different colors using 
+						theory from graph cut resulting in binary segmentation of the image. Please click on "Assignment 3 - Stereo, K-mean, and Grapg Cut" to see the self-contained JupiterNotebook.
+						</p>
+						<a href="https://github.com/0429charlie/CS484---A2" style="float:none; padding:0;"><p>Assignment 2 - EpipolarGeometry</p></a>
+						<p>
+						This assignment challenges student to construct a 3D point in a real-world coordinate system from 2 2D points in 2 different camera's cordinate system. The ideal is to use homograpgy to find the relationship 
+						between the two camera's cordinate system (The essential matrix). Then use the theory of triangulation and the essential matrix to find the camera position and the 3D point in the real-workd coordinate system. 
+						Please click on "Assignment 2 - EpipolarGeometry" to see the self-contained JupiterNotebook
+						</p>
+						<a href="https://github.com/0429charlie/CS484---A1" style="float:none; padding:0;"><p>Assignment 1 - Panorama Mosaicing</p></a>
+						<p>
+						The first assignment of CS484 start with investigation of the famous Ransac algorithm and then using Ransac to find the homography that will be used to reproject a right image to align with the left iamge to 
+						form an mosaic image. The concept of homography and Ransac for point estimation can be applied to real-life problem such as projection of navigation onto the car's front windows which is one of the application 
+						that I am interested in developing on my own in combination of using CNN for image recognition (more of A4 and final project above). Please click on "Assignment 1 - Panorama Mosaicing" to see the self-contained 
+						JupiterNotebook.
+						</p>
+					</li>
+					<br></br>
+					<li>
 						<h4>CS486 Introduction to Artificial Intelligence</h4>
 						<a href="https://github.com/0429charlie/CS486---A4" style="float:none; padding:0;"><p>Assignment 4 - Decision Tree</p></a>
 						<p>
 						Among many interesting assignments from CS486 class, I like the assignment 4 the most. It is about constructing a decision tree from provided data that classify the given 
-						new data into one of the three types of Iris flower. The data is conssited of four features: the lenth and width of sepals and petals. While my main interest in Convolutional 
-						Neural Network, it was facinated to implement the alternative - the decision tree. The avoid overfitting, I limited the depth of decision tree. Furthermore, I used ten-fold 
+						new data into one of the three types of Iris flower. The data is conssited of four features: the lenth and width of sepals and petals. While my main interest is in Convolutional 
+						Neural Network, it was facinated to implement the alternative - the decision tree. To avoid overfitting, I limited the depth of decision tree. Furthermore, I used ten-fold 
 						cross-validation to find the best depth. The result was a 87% accuracy of classifying flower despite only trainig on a small dataset - 100 data points. Please click on "Assignment 
 						4 - Decision Tree" to see the source code.
 						</p>
